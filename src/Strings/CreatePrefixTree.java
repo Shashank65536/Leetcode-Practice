@@ -64,10 +64,13 @@ class CreatePrefixTree {
 
     public static void main(String[] args) {
         String s = "shashank";
-
-        CreatePrefixTree c  =new CreatePrefixTree();
-        c.insert(s);
-        System.out.println(c.root);
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("absc");
+        System.out.println(stringBuilder.substring(0,stringBuilder.length()));
+//
+//        CreatePrefixTree c  =new CreatePrefixTree();
+//        c.insert(s);
+//        System.out.println(c.root);
     }
 }
 
