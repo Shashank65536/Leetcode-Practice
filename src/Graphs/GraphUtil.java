@@ -1,12 +1,10 @@
 package Graphs;
 
-import java.util.LinkedList;
-import java.util.ListIterator;
-import java.util.Stack;
+import java.util.*;
 
 public class GraphUtil {
     private int V; // Number of vertices
-    private LinkedList<Integer>[] adj; // Adjacency lists
+    private LinkedList<Integer>[] adj; // Adj acency lists
 
     // Constructor
     public GraphUtil(int V) {
@@ -96,12 +94,15 @@ public class GraphUtil {
             graph.addEdge(3, 4);
 
         graph.DFSStack(3);
+        int x[] = {1,2,3,4};
+        List<Integer>list= new ArrayList<>();
         for(int i =0 ;i< 7;i++){
-            for(int x: graph.adj[i]){
-                System.out.println(x);
+            for(int g: graph.adj[i]){
+                System.out.println(g);
             }
         }
     }
 }
+
 
 

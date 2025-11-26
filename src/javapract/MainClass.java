@@ -1,8 +1,11 @@
 package javapract;
 
+import DesignPatterns.Prototype.Clone;
 import com.sun.tools.javac.Main;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainClass implements Serializable {
 
@@ -20,8 +23,14 @@ public class MainClass implements Serializable {
 //        mc.clone();
 
         Parent p = new Child();
+
+        Parent.staticMethodParent();
         System.out.println(p.p);
         p.show();
+        p.parentHello();
+        List<Integer>list = new ArrayList<>();
+        ArrayList<Integer> arrayList = new ArrayList<>();
+
 
     }
 }

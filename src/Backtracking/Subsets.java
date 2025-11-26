@@ -11,8 +11,11 @@ public class Subsets {
         Subsets s = new Subsets();
         List<Integer>path = new ArrayList<>();
         List<List<Integer>> list = new ArrayList<>();
-//        list = s.tryRecurse(arr, 0,path, list);
-        list = s.forLoopRecursion(arr, 0,path, list);
+        list = s.tryRecurse(arr, 0,path, list);
+//        list = s.forLoopRecursion(arr, 0,path, list);
+        System.out.println(list);
+//        List<Integer> list  = new ArrayList<>();
+//        list.set(0,6);
         System.out.println(list);
 
     }
@@ -35,10 +38,11 @@ public class Subsets {
 
     public List<List<Integer>> forLoopRecursion(int arr[], int index, List<Integer> path,List<List<Integer>> res){
 
-        res.add(new ArrayList<>(path));
+
         //base condition
         if(index == arr.length){
-
+            res.add(new ArrayList<>(path));
+            path = new ArrayList<>();
             return res;
         }
 

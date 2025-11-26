@@ -15,6 +15,7 @@ public class LC146 {
         this.capacity = capacity;
         dq = new LinkedList<>();
         map = new HashMap<>();
+
     }
 
     public int get(int key) {

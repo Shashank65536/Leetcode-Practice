@@ -7,7 +7,7 @@ public class ExceptionHandling {
 
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         int i  = 0;
         System.out.println("helo");
@@ -25,7 +25,7 @@ public class ExceptionHandling {
             er.printStackTrace();
         }finally {
             System.out.println("4");
-//            throw new MyException1();
+            throw new MyException1();
         }
     }
 
